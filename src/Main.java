@@ -1,4 +1,3 @@
-import java.sql.SQLOutput;
 import java.util.Scanner;
 
 public class Main {
@@ -17,7 +16,6 @@ public class Main {
             current = s.substring(i, i+1);
             if (i == 0 || !s.substring(0, i).contains(current)) {
                 uniqueCount++;
-
                 count = 1;
                 for (int j = i + 1; j < s.length(); j++) {
                     if(current.equals(s.substring(j, j+1))) {
